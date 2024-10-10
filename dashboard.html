@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Helper Hand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="booking.html">Book a Service</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h1>Welcome, <span id="user-name">User</span>!</h1>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h2>Upcoming Services</h2>
+                    <ul id="upcoming-services">
+                        <!-- Dynamically populated list -->
+                    </ul>
+                </div>
+                <div class="dashboard-card">
+                    <h2>Past Bookings</h2>
+                    <ul id="past-bookings">
+                        <!-- Dynamically populated list -->
+                    </ul>
+                </div>
+                <div class="dashboard-card">
+                    <h2>Profile Information</h2>
+                    <p>Name: <span id="profile-name"></span></p>
+                    <p>Email: <span id="profile-email"></span></p>
+                    <button id="edit-profile">Edit Profile</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Helper Hand. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

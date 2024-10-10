@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Help Need - HelperHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">Helper Hand</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="help-listings.html">Available Jobs</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="list-help-page">
+        <div class="list-help-container">
+            <h1>List Your Help Need</h1>
+            <p>Fill out the form below to request assistance from our community of helpers.</p>
+            <form id="list-help-form">
+                <div class="form-group">
+                    <label for="help-title">Title:</label>
+                    <input type="text" id="help-title" name="help-title" required placeholder="e.g., House Cleaning Needed">
+                </div>
+                <div class="form-group">
+                    <label for="help-category">Category:</label>
+                    <select id="help-category" name="help-category" required>
+                        <option value="">Select a category</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Gardening">Gardening</option>
+                        <option value="Caregiving">Caregiving</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="help-description">Description:</label>
+                    <textarea id="help-description" name="help-description" rows="4" required placeholder="Describe your help need in detail"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="help-date">Date:</label>
+                    <input type="date" id="help-date" name="help-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="help-time">Time:</label>
+                    <input type="time" id="help-time" name="help-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="help-location">Location:</label>
+                    <input type="text" id="help-location" name="help-location" required placeholder="e.g., 123 Main St, City, State">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Help Request</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Helper Hand</h3>
+                <p>Your trusted platform for household services.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Helper Hand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

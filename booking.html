@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service - Helper Hand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="booking.html">Book a Service</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking">
+            <h1>Book a Service</h1>
+            <form id="booking-form">
+                <label for="service-category">Service Category:</label>
+                <select id="service-category" name="service-category" required>
+                    <option value="">Select a service</option>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="caregiving">Caregiving</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="home-repairs">Home Repairs</option>
+                </select>
+
+                <label for="service-date">Date:</label>
+                <input type="date" id="service-date" name="service-date" required>
+
+                <label for="service-time">Time:</label>
+                <input type="time" id="service-time" name="service-time" required>
+
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions" rows="4"></textarea>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Helper Hand. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

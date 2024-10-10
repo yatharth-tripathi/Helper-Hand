@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - HelperHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">Helper Hand</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="help-listings.html">Available Jobs</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="service-details-page">
+        <div class="container">
+            <div class="service-details-content">
+                <div class="service-info">
+                    <h1 id="service-title">Service Title</h1>
+                    <div id="service-description">
+                        <!-- Service description will be loaded here by JavaScript -->
+                    </div>
+                    <div class="service-features">
+                        <h2>Features</h2>
+                        <ul id="service-features-list">
+                            <!-- Features will be loaded here by JavaScript -->
+                        </ul>
+                    </div>
+                    <div class="service-pricing">
+                        <h2>Pricing</h2>
+                        <p id="service-pricing"></p>
+                    </div>
+                </div>
+                <div class="booking-section">
+                    <h2>Book This Service</h2>
+                    <form id="service-booking-form">
+                        <input type="hidden" id="service-name" name="service-name">
+                        <div class="form-group">
+                            <label for="booking-date">Date:</label>
+                            <input type="date" id="booking-date" name="booking-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-time">Time:</label>
+                            <input type="time" id="booking-time" name="booking-time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-duration">Duration (in hours):</label>
+                            <input type="number" id="booking-duration" name="booking-duration" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-notes">Additional Notes:</label>
+                            <textarea id="booking-notes" name="booking-notes" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content (same as other pages) -->
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
